@@ -1,0 +1,70 @@
+<!-- Image and text -->
+<nav class="navbar fixed-top navbar-dark bg-dark">
+
+    <button class="navbar-toggler border-0" type="button" id="navbarSideCollapse"
+            aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="https://starter.simone.pro/#">wwwpy starter v0.0.1</a>
+</nav>
+<!-- div class="nav-scroller bg-body shadow-sm" id="navBand" w-expand></div -->
+<main class="container p-2 pt-3" id="main_content">
+</main>
+
+<div>
+    <button id="btnToggle" style="display: none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+            aria-controls="offcanvasScrolling"></button>
+
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+         id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel" style="visibility: hidden;"
+         aria-hidden="true">
+        <div class="offcanvas-header" id="idHeader">
+            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Menu</h5>
+            <button id="btnClose" type="button" class="btn-close text-reset" aria-label="Close"
+                    data-bs-dismiss="offcanvas" data-bs-target="#offcanvasScrolling"></button>
+        </div>
+        <div class="offcanvas-body" id="offcanvas">
+
+        </div>
+    </div>
+
+
+</div>
+
+
+<div w-type="SpinnerWidget">
+    <style>
+        .spinner_base {
+            border: 4px solid #f3f3f3; /* Light grey */
+            border-top: 4px solid #3498db; /* Blue */
+            border-radius: 50%;
+            position: fixed;
+            width: 30px;
+            height: 30px;
+            animation: spin 0.5s linear infinite;
+        }
+
+        #div_loader2 {
+            left: 0px;
+            top: 0px;
+        }
+
+        #div_loader {
+            bottom: 0;
+            right: 0;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <div id="div_loader" class="spinner_base" style="display: none;"></div>
+
+</div>
+<div id="toast"></div>
+
