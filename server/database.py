@@ -1,4 +1,3 @@
-import configparser
 import decimal
 import traceback
 from pathlib import Path
