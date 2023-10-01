@@ -47,11 +47,12 @@ class ExecuteSqlWidget(Widget):
 
 # language=html
 html = """
-<h1>sql</h1>
+<h1>Sql Editor</h1>
+<span>Only one statement. Press CTRL-E to execute</span>
 <textarea id='id_sql' rows='6' style='width: 100%'></textarea>
 <br>
-<button id='id_btn'>execute</button>
-<button id='id_xls'>excel</button>
+<button id='id_btn'>Execute</button>
+<button id='id_xls'>Excel</button>
 <div id='grid'></div>
 """
 
