@@ -1,6 +1,3 @@
-from server.database import execute_sql
-
-
 async def add(a, b) -> int:
     result = a + b
     if result > 42:
@@ -13,4 +10,5 @@ async def server_execute_sql(sql: str,
                              header: bool = False,
                              print_result: bool = False,
                              exception_as_result: bool = False):
+    from server.database import execute_sql
     return execute_sql(sql, params, header, print_result, exception_as_result)
