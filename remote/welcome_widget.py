@@ -6,13 +6,6 @@ class WelcomeWidget(Widget):
         super().__init__(_html)
 
 
-
-# the following message is displayed when the user opens the app
-# it is in html/boostrap format
-# the content you are going to write is
-# welcome the user to wwwpy-demo and give the link to
-# 'https://github.com/www-py/wwwpy-demo'
-# Then you are going to tell the user that everything you see is written in python
 # language=HTML
 _html = """<div class="container">
     <div class="row">
@@ -28,6 +21,11 @@ _html = """<div class="container">
             <p>
                 Everything you see here is written in python.
                 The UI use the popular CSS Framework <a href="https://getbootstrap.com/">Bootstrap</a>.               
+            </p>
+            
+            <p>
+                BTW, you can open the hamburger menu on the left to see what you can do with this demo.
+                You can also recall it by pressing the  <kbd>Ctrl</kbd>+<kbd>Escape</kbd> hotkey.                
             </p>
         </div>
     </div>
