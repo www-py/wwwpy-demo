@@ -22,6 +22,7 @@ class NavbarWidget(Widget):
 
     def after_render(self):
         HotkeyWindow.add("META-Escape", self.toggle)
+        HotkeyWindow.add("CTRL-Escape", self.toggle)
 
     def navbarSideCollapse__click(self, evt: Event):
         evt.stopPropagation()

@@ -16,16 +16,16 @@ _html = """<div class="container">
                 It is based on <a href="https://github.com/www-py/wwwpy">wwwpy</a>.
                 <br>
                 You can get the source code of this demo <a href="https://github.com/www-py/wwwpy-demo">here</a>.
-                
+
             </p>
             <p>
                 Everything you see here is written in python.
-                The UI use the popular CSS Framework <a href="https://getbootstrap.com/">Bootstrap</a>.               
+                The UI use the popular CSS Framework <a href="https://getbootstrap.com/">Bootstrap</a>.
             </p>
-            
+         
             <p>
                 BTW, you can open the hamburger menu on the left to see what you can do with this demo.
-                You can also recall it by pressing the  <kbd>Ctrl</kbd>+<kbd>Escape</kbd> hotkey.                
+                You can also recall it by pressing the <kbd>Ctrl</kbd>+<kbd>Escape</kbd> hotkey.
             </p>
         </div>
     </div>
