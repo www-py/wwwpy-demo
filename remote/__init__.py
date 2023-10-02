@@ -2,13 +2,13 @@ import asyncio
 
 from js import document
 from wwwpy.remote.hotkey import HotkeyWindow
-from wwwpy.remote.widget import Widget
 
 from remote.bootstrap import setup_bootstrap
 from remote.bootstrap.navbar_widget import NavbarWidget
 from remote.menu_item import MenuItem
 from remote.components.tree_widget import TreeWidget
 from remote.ui import spinner, toast
+from remote.welcome_widget import WelcomeWidget
 
 
 async def main():
@@ -18,7 +18,7 @@ async def main():
     navbar_widget = NavbarWidget().append_to(document.body)
     ui.set_navbar_widget(navbar_widget)
 
-    navbar_widget.show_main(Widget("welcome!"))
+    navbar_widget.show_main(WelcomeWidget())
     spinner.append_to(document.body)
 
     menu_root = build_menu(navbar_widget)
@@ -78,3 +78,5 @@ def wrap_in_tree(root: MenuItem, navbar) -> TreeWidget:
     menu.on_cell_render = lambda i: None if i.depth == 0 else i.cell.classList.add("py-1")
     menu.on_item_click = item_click
     return menu
+
+
