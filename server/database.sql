@@ -1,3 +1,18 @@
+CREATE TABLE pie (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    flavor TEXT NOT NULL,
+    size REAL NOT NULL,
+    ingredients TEXT
+);
+GO
+INSERT INTO pie (name, flavor, size, ingredients)
+VALUES
+('Apple Pie', 'Apple', 9.0, 'Apples, Sugar, Flour, Butter, Cinnamon'),
+('Cherry Pie', 'Cherry', 8.5, 'Cherries, Sugar, Flour, Butter'),
+('Pumpkin Pie', 'Pumpkin', 10.0, 'Pumpkin Puree, Sugar, Eggs, Cream, Cinnamon, Nutmeg');
+GO
+
 CREATE TABLE person
 (
     id      INTEGER PRIMARY KEY AUTOINCREMENT,
