@@ -52,7 +52,7 @@ def build_menu(navbar: NavbarWidget) -> MenuItem:
     root = MenuItem('_root')
     base = root.new_child('Development')
     base.new_child('Calculator', show_calculator)
-    base.new_child('Blueetooth', show_bluetooth)
+    base.new_child('Bluetooth', show_bluetooth)
     base.new_child('Sql Editor', show_sql_editor)
     base.new_child('Filesystem', show_filesystem)
     second = root.new_child('Misceleanous')
