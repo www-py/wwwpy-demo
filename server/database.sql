@@ -1,16 +1,15 @@
 CREATE TABLE pie (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT NOT NULL,
     flavor TEXT NOT NULL,
-    size REAL NOT NULL,
-    ingredients TEXT
+    date DATE
 );
 GO
-INSERT INTO pie (name, flavor, size, ingredients)
+
+INSERT INTO pie (name, flavor, date)
 VALUES
-('Apple Pie', 'Apple', 9.0, 'Apples, Sugar, Flour, Butter, Cinnamon'),
-('Cherry Pie', 'Cherry', 8.5, 'Cherries, Sugar, Flour, Butter'),
-('Pumpkin Pie', 'Pumpkin', 10.0, 'Pumpkin Puree, Sugar, Eggs, Cream, Cinnamon, Nutmeg');
+('Apple Pie', 'Apple', '2023-10-06'),
+('Cherry Pie', 'Cherry', '2023-10-07'),
+('Pumpkin Pie', 'Pumpkin', '2023-10-08');
 GO
 
 CREATE TABLE person
