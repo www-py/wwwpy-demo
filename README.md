@@ -21,14 +21,3 @@ bashCopy code
 `python -m wwwpy.server`
 
 This command will start the server, and you should be able to access the application on your local machine.
-
-SQL Editor Configuration
-------------------------
-
-If you wish to utilize the SQL Editor feature, an additional package `sqlalchemy` is required. Install `sqlalchemy` by executing the following command:
-
-bashCopy code
-
-`pip install sqlalchemy`
-
-With `sqlalchemy` installed, the SQL Editor functionality should now be available within the `wwwpy-demo` application.
