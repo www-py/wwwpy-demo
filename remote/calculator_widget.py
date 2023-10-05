@@ -40,29 +40,28 @@ class CalculatorWidget(Widget):
 # language=html
 _html = """
 <div class="input-group mb-3">
-    <span class="input-group-text" id="basic-addon1">A</span>
-    <input id='inputA' type="text" class="form-control" placeholder="an integer A" aria-label="Username"
-           aria-describedby="basic-addon1">
+    <span class="input-group-text">A</span>
+    <input id='inputA' type="text" class="form-control"
+           placeholder="an integer A">
 </div>
 
 <div class="input-group mb-3">
-    <span class="input-group-text" id="basic-addon1">B</span>
-    <input id='inputB' type="text" class="form-control" placeholder="an integer B" aria-label="Username"
-           aria-describedby="basic-addon1">
+    <span class="input-group-text">B</span>
+    <input id='inputB' type="text" class="form-control"
+           placeholder="an integer B">
 </div>
 
 <div class="form-floating mb-3">
-    <input id='inputResult' type="text" class="form-control" id="floatingInput" placeholder="the addition will appear here">
-    <label for="floatingInput">A + B =</label>
+    <input id='inputResult' type="text" class="form-control">
+    <label for="inputResult">A + B =</label>
 </div>
+
 
 <div class="card" >
     <div class="card-body">
         <h5 class="card-title">Good to know!</h5>
-<!--        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>-->
         <p class="card-text">When the sum is greater than 42, the server will raise an exception.</p>
         <p>Just for fun!</p>
     </div>
 </div>
-
 """
