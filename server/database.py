@@ -2,6 +2,7 @@ import decimal
 import traceback
 from pathlib import Path
 import sqlite3
+from datetime import datetime
 
 
 def map_data(row):
@@ -75,8 +76,22 @@ def execute_queryweb(queryweb_id: int, params: dict = None):
     return ()
 
 
+def save_pie_to_database(name: str, flavor: str, pie_date: datetime = None) -> int:
+    sql = 'INSERT INTO pie (name, flavor, date) VALUES (?, ?, ?)'
+    date_str = pie_date.isoformat() if pie_date else None
+    with new_connection() as connection:
+        cursor = connection.cursor()
+        cursor.execute(sql, (name, flavor, date_str))
+        row_id = cursor.lastrowid
+        connection.commit()
+        cursor.close()
+    return row_id
+
+
 if __name__ == '__main__':
     # res = execute_sql('select max(id) from sqlquery')
     # execute_sql("update sqlquery set dssql='' where id=-1", print_result=True, header=True)
     # new_connection()
-    execute_sql('select * from pie' , print_result=True, header=True)
+    assigned_id = save_pie_to_database("Sample Pie", "Sample Flavor", datetime.now())
+    print(f"Assigned ID for the pie: {assigned_id}")
+    execute_sql('select * from pie', print_result=True, header=True)

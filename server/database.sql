@@ -1,7 +1,8 @@
 CREATE TABLE pie (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT NOT NULL,
     flavor TEXT NOT NULL,
-    date DATE
+    date TEXT NOT NULL
 );
 GO
 
@@ -11,6 +12,7 @@ VALUES
 ('Cherry Pie', 'Cherry', '2023-10-07'),
 ('Pumpkin Pie', 'Pumpkin', '2023-10-08');
 GO
+
 
 CREATE TABLE person
 (
