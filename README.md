@@ -16,8 +16,9 @@ Running the Application
 
 After installing the `wwwpy` package, you can run the application by executing the following command in the terminal:
 
-bashCopy code
 
-`python -m wwwpy.server`
+```bash
+python -m wwwpy.server
+```
 
 This command will start the server, and you should be able to access the application on your local machine.
