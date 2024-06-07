@@ -5,20 +5,13 @@ package.
 This README contains instructions on how to set up, install, and run the project on your local machine.
 
 ## Installation
-1. Ensure you have Python installed on your machine. If not, download and install Python from the official [website](https://www.python.org/downloads/).
-2. Open your terminal or command prompt.
-3. Install the `wwwpy` package by running the following command:
+1. Setup your python environment
+2. Install the `wwwpy` package by running the following command:
    
    `pip install wwwpy`
-   
-Running the Application
------------------------
+3. Clone the repository and change your working directory to it
+4. Start the wwwpy server with `python -m wwwpy.server`
 
-After installing the `wwwpy` package, you can run the application by executing the following command in the terminal:
-
-
-```bash
-python -m wwwpy.server
-```
 
 This command will start the server, and you should be able to access the application on your local machine.
+
