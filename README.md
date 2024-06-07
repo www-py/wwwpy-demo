@@ -6,9 +6,7 @@ This README contains instructions on how to set up, install, and run the project
 
 ## Installation
 1. Setup your python environment
-2. Install the `wwwpy` package by running the following command:
-   
-   `pip install wwwpy`
+2. Install the wwwpy package by running the command `pip install wwwpy`
 3. Clone the repository and change your working directory to it
 4. Start the wwwpy server with `python -m wwwpy.server`
 
