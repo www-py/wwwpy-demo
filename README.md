@@ -13,3 +13,8 @@ This README contains instructions on how to set up, install, and run the project
 
 This command will start the server, and you should be able to access the application on your local machine.
 
+## Screenshots
+
+![image](https://github.com/www-py/wwwpy-demo/assets/3785783/163ca2fd-647e-4d0d-aece-2d24a3f74970)
+
+
